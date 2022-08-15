@@ -58,10 +58,13 @@ public class login extends JFrame{
                     case 1: 
                         administrador ad = new administrador();
                         ad.ejecutar();
+                        dispose();
                         //JOptionPane.showMessageDialog(null, "Es Administrador");
                     break;
                     case 0:
-                        
+                        vendedor vn = new vendedor();
+                        vn.ejecutar();
+                        dispose();
                      //JOptionPane.showMessageDialog(null, "Es vendedor");
                      break;
                     default:

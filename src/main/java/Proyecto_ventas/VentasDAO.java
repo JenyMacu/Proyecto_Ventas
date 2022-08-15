@@ -4,10 +4,10 @@ package Proyecto_ventas;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import javax.swing.JTable;
 
-
-public class VendedoresDAO {
-   PreparedStatement ps;
+public class VentasDAO {
+    PreparedStatement ps;
     ResultSet rs;
     Connection con;
     Conexion conectar = new Conexion();
@@ -81,8 +81,5 @@ public class VendedoresDAO {
         return datos;
 
     }
-
-    int filtro(String text, String text0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 }
